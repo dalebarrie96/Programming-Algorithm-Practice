@@ -3,7 +3,7 @@ package dbarrie.codeforces.beginner;
 import java.util.Scanner;
 
 /*
- * Codeforces A Team - Difficulty 800
+ * Codeforces Domino Piling - Difficulty 800
  * 
  * https://codeforces.com/problemset/problem/50/A
  */
