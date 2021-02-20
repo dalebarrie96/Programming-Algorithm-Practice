@@ -2,7 +2,11 @@ package dbarrie.codeforces.beginner;
 
 import java.util.Scanner;
 
-
+/*
+ * Codeforces Next Round - Difficulty 800
+ * 
+ * https://codeforces.com/problemset/problem/158/A
+ */
 public class NextRound {
 
 	public static void main(String[] args) {
@@ -28,7 +32,7 @@ public class NextRound {
 			}
 		}
 		
-		System.out.println(n - countNot);
+		System.out.println(Integer.valueOf(consArr[0]) - countNot);
 		
 	}
 
