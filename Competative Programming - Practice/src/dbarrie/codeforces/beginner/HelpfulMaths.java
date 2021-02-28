@@ -6,7 +6,7 @@ import java.util.Scanner;
 /*
  * Codeforces HelpfulMaths - Difficulty 800
  * 
- * https://codeforces.com/problemset/problem/266/A
+ * https://codeforces.com/problemset/problem/339/A
  */
 public class HelpfulMaths {
 

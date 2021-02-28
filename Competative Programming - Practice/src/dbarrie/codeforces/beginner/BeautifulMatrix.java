@@ -2,6 +2,11 @@ package dbarrie.codeforces.beginner;
 
 import java.util.Scanner;
 
+/*
+ * Codeforces Beautiful Matrix - Difficulty 800
+ * 
+ * https://codeforces.com/problemset/problem/263/A
+ */
 public class BeautifulMatrix {
 
 	public static void main(String[] args) {
