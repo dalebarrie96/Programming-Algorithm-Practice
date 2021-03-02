@@ -12,14 +12,13 @@ public class BoyOrGirl {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String in = sc.nextLine();
-		String dist = "";
 		String resp = "";
 		
 		for(int i =0; i < in.length(); i++) {
-			if(!dist.contains("" + in.charAt(i))) dist += in.charAt(i);
+			if(!resp.contains("" + in.charAt(i))) resp += in.charAt(i);
 		}
 		
-		resp = dist.length() % 2 == 0 ? "CHAT WITH HER!" : "IGNORE HIM!";
+		resp = resp.length() % 2 == 0 ? "CHAT WITH HER!" : "IGNORE HIM!";
 		
 		System.out.println(resp);
 	}
