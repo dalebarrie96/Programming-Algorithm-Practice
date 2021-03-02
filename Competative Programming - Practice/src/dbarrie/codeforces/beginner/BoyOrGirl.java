@@ -18,9 +18,7 @@ public class BoyOrGirl {
 			if(!resp.contains("" + in.charAt(i))) resp += in.charAt(i);
 		}
 		
-		resp = resp.length() % 2 == 0 ? "CHAT WITH HER!" : "IGNORE HIM!";
-		
-		System.out.println(resp);
+		System.out.println(resp.length() % 2 == 0 ? "CHAT WITH HER!" : "IGNORE HIM!");
 	}
 
 }
