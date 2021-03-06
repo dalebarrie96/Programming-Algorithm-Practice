@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 
  * https://codeforces.com/problemset/problem/96/A
  */
-public final class Football {
+public class Football {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
