@@ -1,4 +1,4 @@
-package dbarrie.codeforces.beginner;
+package dbarrie.codeforces.beginner;	
 
 import java.util.Scanner;
 
@@ -8,6 +8,8 @@ public class AlexeyAndTrain {
 	 * Codeforces Alexey And Train - Difficulty 800
 	 * 
 	 * https://codeforces.com/problemset/problem/1501/A
+	 * 
+	 * TODO: Fix please
 	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -29,7 +31,7 @@ public class AlexeyAndTrain {
 				int plannedArrival = stationsArr[d][0];
 				int actualArrival = stationsArr[d][0] + Integer.valueOf(delays[d]);
 				int plannedDepart = stationsArr[d][1];
-				int minDuration = Math.round((float)(plannedDepart - plannedArrival) / 2);
+				int minDuration = Math.round((float)(plannedDepart - actualArrival) / 2); //big decimal maybe?
 				int travelTime = stationsArr[d+1][0] - plannedDepart;
 				
 //				System.out.println("******* Solving *******");
