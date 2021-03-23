@@ -11,13 +11,11 @@ public class WrongSubtraction {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Integer n = sc.nextInt();
+		int n = sc.nextInt();
 		int k = sc.nextInt();
 		
 		for(int i=0; i < k;i++) {
-			String msg = String.valueOf(n);
-			
-			if(msg.charAt(msg.length()-1) == '0') {
+			if(n%10 == 0) {
 				n = n / 10;
 			}else {
 				n--;
