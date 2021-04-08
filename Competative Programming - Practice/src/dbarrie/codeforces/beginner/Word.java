@@ -3,7 +3,7 @@ package dbarrie.codeforces.beginner;
 import java.util.Scanner;
 
 /*
- * Codeforces Football - Difficulty 800
+ * Codeforces Word - Difficulty 800
  * 
  * https://codeforces.com/problemset/problem/59/A
  */
