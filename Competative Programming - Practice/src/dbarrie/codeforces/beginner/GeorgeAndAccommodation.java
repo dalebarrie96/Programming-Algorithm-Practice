@@ -2,6 +2,11 @@ package dbarrie.codeforces.beginner;
 
 import java.util.Scanner;
 
+/*
+ * Codeforces George and Accommodation - Difficulty 800
+ * 
+ * https://codeforces.com/problemset/problem/467/A
+ */
 public class GeorgeAndAccommodation {
 
 	public static void main(String[] args) {
