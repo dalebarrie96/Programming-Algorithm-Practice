@@ -1,6 +1,5 @@
 package dbarrie.codeforces.beginner;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -19,17 +18,7 @@ public class BeautifulYear {
 		do {
 			year++;
 			
-			char[] arr = String.valueOf(year).toCharArray();
-			Arrays.sort(arr);
-			boolean anyMatch = false;
-			
-			for (int i = 1; i < arr.length; i++) {
-				if(arr[i] == arr[i-1]) {
-					anyMatch = true;
-				}	
-			}
-			
-			if(!anyMatch) isBeautiful = true;
+			if(String.valueOf(year).chars().distinct().count() == 4) isBeautiful = true; 
 			
 		} while(!isBeautiful);
 		
