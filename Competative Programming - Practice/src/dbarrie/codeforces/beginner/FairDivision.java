@@ -9,18 +9,46 @@ import java.util.Scanner;
  */
 public class FairDivision {
 	
-	// TODO: Finish this please.
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int no = sc.nextInt();
+		int no = sc.nextInt(); //Number of test cases
 		String[] res = new String[no];
 		
-		for(int i=0; i < no; i++) {
+		for(int i=0; i < no; i++) { //For each test case
 			int sweets = sc.nextInt();
+			
+			int two = 0;
+			int one = 0;
 
-			for(int s=0; s < sweets; s++) {
+			for(int s=0; s < sweets; s++) { //setup array of sweets for this test case
 				int grams = sc.nextInt();
+				if(grams == 2) {
+					two++;
+				}else {
+					one++;
+				}
 			}
+			
+			
+			if(two%2==0) {
+				if(one%2==0) {
+					res[i] = "YES";
+				}else {
+					res[i] = "NO";
+				}
+			}else{
+				if(one >=2) {
+					if(one%2==0) {
+						res[i] = "YES";
+					}else {
+						res[i] = "NO";
+					}
+				}else {
+					res[i] = "NO";
+				}
+				
+			}
+			
 			
 			
 		}
