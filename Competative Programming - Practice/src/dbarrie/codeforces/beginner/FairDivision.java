@@ -17,39 +17,18 @@ public class FairDivision {
 		for(int i=0; i < no; i++) { //For each test case
 			int sweets = sc.nextInt();
 			
-			int two = 0;
-			int one = 0;
+			int two = 0, one = 0;
 
 			for(int s=0; s < sweets; s++) { //setup array of sweets for this test case
-				int grams = sc.nextInt();
-				if(grams == 2) {
+				if(sc.nextInt() == 2) {
 					two++;
 				}else {
 					one++;
 				}
 			}
 			
-			
-			if(two%2==0) {
-				if(one%2==0) {
-					res[i] = "YES";
-				}else {
-					res[i] = "NO";
-				}
-			}else{
-				if(one >=2) {
-					if(one%2==0) {
-						res[i] = "YES";
-					}else {
-						res[i] = "NO";
-					}
-				}else {
-					res[i] = "NO";
-				}
-				
-			}
-			
-			
+			res[i] = (two%2==0 && one%2==0)
+					|| (two%2 == 1 && (one >= 2 && one%2==0)) ? "YES" : "NO";
 			
 		}
 		
