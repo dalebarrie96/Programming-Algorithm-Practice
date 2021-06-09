@@ -12,30 +12,13 @@ public class OneTwoThreeProblem {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		int[] arr = new int[n];
-		int one =0, two =0, three=0;
+		int[] arr = new int[3];
 		
 		for(int i = 0; i < n; i++) {
-			int no = sc.nextInt();
-			arr[i] = no;
-			if(no == 1) {
-				one ++;
-			}else if(no == 2) {
-				two++;
-			}else {
-				three++;
-			}
+			arr[sc.nextInt() - 1] ++;
 		}
 		
-		if(one >= two && one >= three) {
-			System.out.println(two + three);
-		}else if(two >= one && two >= three) {
-			System.out.println(one + three);
-		}else if(three >= one && three >= two) {
-			System.out.println(one + two);
-		}else {
-			System.out.println(one + two);
-		}
+		System.out.println(n - Math.max(arr[0], Math.max(arr[1], arr[2])));
 
 	}
 
